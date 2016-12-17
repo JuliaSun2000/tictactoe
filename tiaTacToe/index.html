@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+			<script src="https://use.fontawesome.com/eee66b70a8.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="board" id="board">
+  <header>
+    <h1>Tic Tac Toe</h1>
+		<div class="list">
+    <ul>
+      <li class="players" id="player1">
+				<p id="symbol1"></p>
+				<p id="player1name"></p>
+      </li>
+      <li class="players" id="player2">
+				<p id="symbol2"></p>
+				<p id="player2name"></p>
+      </li>
+    </ul>
+	</div>
+  </header>
+	<div id="gameboard">
+		<div class="row">
+			<div class="square bottom right s1"></div>
+			<div class="square bottom right s2"></div>
+			<div class="square bottom s3"></div>
+		</div>
+		<div class="row">
+			<div class="square bottom right s4"></div>
+			<div class="square bottom right s5"></div>
+			<div class="square bottom s6"></div>
+		</div>
+		<div class="row">
+			<div class="square right s7"></div>
+			<div class="square right s8"></div>
+			<div class="square s9"></div>
+	</div>
+</div>
+</div>
+<input type="button" value="display result" id="displayBtn" class="btn btn-info">
+<input type="button" value="reset" id="resetBtn" class="btn btn-info">
+<input type="button" value="play again" id="againBtn" class="btn btn-info">
+<div id="results">
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="scripts/events.js"></script>
+
+</body>
+</html>

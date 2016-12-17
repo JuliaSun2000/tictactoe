@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  background: #fff;
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  line-height:1;
+  margin: 0 auto;
+  text-align: center;
+   }
+
+   #gameboard{
+     width: 360px;
+     margin: 40px auto 0 auto;
+   }
+
+   .row{
+     clear: both;
+     overflow: hidden;
+   }
+
+   .square {
+     float: left;
+     width: 125px;
+     height:125px;
+     cursor: pointer;
+     text-align: center;
+     font-size: 60px;
+     padding-top: 28px;
+   }
+
+   .bottom{
+     border-bottom: 2px solid black;
+   }
+
+   .right {
+     border-right: 2px solid black;
+   }
+
+   .pink{
+     background-color:rgba(255, 128, 176, 1);
+   }
+   .fa-times{
+     color:rgba(67, 161, 244, 1);
+   }
+   .fa-circle-o{
+     color:rgba(40, 204, 76, 1);
+   }
+
+.button {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 1.25em 3em;
+  text-decoration: none;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease; }
+  .button:hover {
+    color: #000; }
+
+.screen {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; }
+  .screen header {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%); }
+  .screen h1 {
+    color: #fff; }
+  .screen-start {
+    background: #f2abe0; }
+    .screen-start h1 {
+      font-size: 4em; }
+    .screen-start .button {
+      color: #e453c0; }
+    .screen-start h1 + .button {
+      margin-top: 5em; }
+
+.players {
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  top: 1rem;
+  width: 25%;
+  padding: 0;
+  outline: 1px solid #ccc;
+  transition: 1s; }
+  .players:first-child {
+    left: 5%; }
+  .players:last-child {
+    right: 5%; }
+  .players-turn {
+    outline: none;
+  }
